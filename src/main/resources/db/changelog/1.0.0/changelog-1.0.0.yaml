@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - include:
+      relativeToChangelogFile: true
+      file: create-patients.sql
+  - include:
+      relativeToChangelogFile: true
+      file: create-doctors.sql
+  - include:
+      relativeToChangelogFile: true
+      file: create-medical-histories.sql
+  - include:
+      relativeToChangelogFile: true
+      file: create-schedule.sql
