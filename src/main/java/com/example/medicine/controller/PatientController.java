@@ -40,4 +40,8 @@ public class PatientController {
                 .collect(Collectors.toList());
     }
 
+    @GetMapping("/get-patient-by-id/{id}")
+    public PatientDTO getPatientById(@PathVariable Long id) {
+        return patientConverter.toDTO(patientService.getPatientById(id));
+    }
 }
